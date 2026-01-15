@@ -33,9 +33,9 @@ const Navbar: React.FC<NavbarProps> = ({ user, onOpenProfile }) => {
             
             <button 
               onClick={onOpenProfile}
-              className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-full transition-all active:scale-95"
+              className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-full transition-all active:scale-95 group"
             >
-              <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-xs">
+              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-xs shadow-sm group-hover:shadow-indigo-200 transition-all">
                 {user.name.charAt(0).toUpperCase()}
               </div>
               <span className="text-sm font-medium">Profile</span>
