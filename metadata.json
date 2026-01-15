@@ -1,0 +1,5 @@
+{
+  "name": "TechDigest.ai",
+  "description": "A personalized AI-powered technology news aggregator that summarizes your favorite topics using Gemini.",
+  "requestFramePermissions": []
+}
