@@ -1,7 +1,10 @@
 export interface NewsItem {
   headline: string;
   summary: string;
+  date: string;
   impact: 'High' | 'Medium' | 'Low';
+  url?: string;
+  source?: string;
 }
 
 export interface TopicSummary {
@@ -19,8 +22,15 @@ export interface GroundingChunk {
 
 export interface UserPreferences {
   name: string;
+  jobTitle?: string;
   topics: string[];
-  apiKey?: string; // Stored locally for convenience if needed, though env is preferred
+  avatar?: string;
+  plan?: 'Free' | 'Pro';
+  apiKey?: string; // Stored locally for convenience if needed
+  serpApiKey?: string;
+  openAiApiKey?: string;
+  customModelName?: string;
+  baseUrl?: string;
 }
 
 export const DEFAULT_TOPICS = [

@@ -13,7 +13,9 @@ export const getUserPreferences = (): UserPreferences => {
   }
   return {
     name: 'Guest',
-    topics: DEFAULT_TOPICS
+    jobTitle: 'Tech Enthusiast',
+    topics: DEFAULT_TOPICS,
+    plan: 'Free'
   };
 };
 

@@ -58,7 +58,7 @@ const App: React.FC = () => {
         ) : (
           <div className="flex flex-col gap-8">
             {user.topics.map((topic) => (
-              <NewsCard key={topic} topic={topic} />
+              <NewsCard key={topic} topic={topic} modelName={user.customModelName} baseUrl={user.baseUrl} />
             ))}
             
             {/* Add New Topic Button - Full Width */}
